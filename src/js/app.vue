@@ -69,17 +69,6 @@ export default {
   },
   created() {
     this.getItems();
-    const notification = (config) =>
-      UIkit.notification({
-        pos: "top-right",
-        timeout: 5000,
-        ...config,
-      });
-    const error = (message) =>
-      notification({
-        message,
-        status: "danger",
-      });
   }
 };
 </script>
